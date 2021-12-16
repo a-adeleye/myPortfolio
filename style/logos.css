@@ -1,0 +1,72 @@
+.background {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 20%;
+  box-shadow: 8px 10px 12px 3px rgba(0, 0, 0, 0.43);
+}
+
+.background-inner {
+  width: 70px;
+  height: 70px;
+  background: white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30%;
+  box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.23);
+}
+
+.css {
+  background: dodgerblue;
+}
+
+.badge {
+  width: 40px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.html5 {
+  background: darkorange;
+}
+
+.js {
+  background: gold;
+}
+
+.purple {
+  background: mediumpurple;
+}
+
+.black {
+  background: black;
+}
+
+.black-text {
+  color: black;
+}
+.node {
+  background: yellowgreen;
+}
+
+.github {
+  background: black;
+}
+
+.npm {
+  background: firebrick;
+}
+
+.react {
+  background-color: #61dbfb;
+}
+
+.redux {
+  background-color: purple;
+}

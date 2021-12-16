@@ -4,41 +4,350 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>elecktra inspira</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/logos.css" />
+    <link rel="stylesheet" href="style/neomorphic.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <title>Adeleye Adeyemi</title>
   </head>
   <body>
-    <div class="container">
-      <div class="header-container">
-        <header>
-          <img class="logo" src="images/aa-logo.png" alt="" />
-          <div class="menu"></div>
-        </header>
+    <div class="main-container">
+      <div class="sticky">
+        <a href="#menu"><img src="images/arrow-up.svg" alt="" /></a>
       </div>
-    </div>
-
-    <div class="container">
-      <div class="hero">
-        <div class="col-2-left">
-          <h1>
-            Hi, 👋 <br />My name is<br />
-            Adeleye
-          </h1>
-          <h3>I am a creative Frontend Developer</h3>
-          <p>I create beautiful and well-engineered websites and web apps</p>
-          <button>Contact me</button>
+      <div class="container">
+        <div class="header-container">
+          <header>
+            <img class="logo" src="images/AA.png" alt="" />
+            <div class="menu" onclick="toggle()"></div>
+            <ul id="menu">
+              <li><a href="#my-work">My Work</a></li>
+              <li><a href="#contact">Contact Me</a></li>
+              <li><a href="#social">Social Media</a></li>
+            </ul>
+          </header>
         </div>
-        <div class="col-2-right">
-          <div class="white-box">
-            <div class="col-2-img"></div>
-            <p>Email me:<br />adeleyeadeyemib@gmail.com &#x2192;</p>
+      </div>
+
+      <div class="container">
+        <div class="hero">
+          <div class="col-2-left">
+            <h1>
+              Hi, 👋<br />
+              I'm Adeleye
+            </h1>
+            <h3>I'm a creative Frontend Developer based in Dubai</h3>
+            <p>I build beautiful and well-engineered websites and web apps</p>
+            <a class="button" id="#btn" onclick="modalis()">Contact me</a>
+            <a href="#my-work" class="button">My work</a>
+          </div>
+          <div class="col-2-right">
+            <div class="radiogroup">
+              <h2>Soft Skills</h2>
+              <div class="wrapper">
+                <input class="state" type="radio" checked />
+                <label class="label" for="a">
+                  <div class="indicator"></div>
+                  <span class="text">Communication</span>
+                </label>
+              </div>
+              <div class="wrapper">
+                <input class="state" type="radio" checked />
+                <label class="label" for="b">
+                  <div class="indicator"></div>
+                  <span class="text">Problem solving</span>
+                </label>
+              </div>
+              <div class="wrapper">
+                <input class="state" type="radio" checked />
+                <label class="label" for="c">
+                  <div class="indicator"></div>
+                  <span class="text">Time management</span>
+                </label>
+              </div>
+              <div class="wrapper">
+                <input class="state" type="radio" checked />
+                <label class="label" for="d">
+                  <div class="indicator"></div>
+                  <span class="text">Creative thinking</span>
+                </label>
+              </div>
+
+              <div class="wrapper">
+                <input class="state" type="radio" checked />
+                <label class="label" for="d">
+                  <div class="indicator"></div>
+                  <span class="text">Leadership</span>
+                </label>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <div class="row">
+        <div class="frame-container">
+          <div
+            class="responsive"
+            data-iframe-width="150"
+            data-iframe-height="270"
+            data-share-background-id="b76dabfc-8fa8-4ccc-8372-4f7a70566b06"
+            data-share-background-host="https://www.credly.com"
+          ></div>
+          <script
+            type="text/javascript"
+            async
+            src="//cdn.credly.com/assets/utilities/embed.js"
+          ></script>
+        </div>
 
-    <div class="container">
-        <h2></h2>
+        <h2 class="skill-title">My Skills</h2>
+        <div class="frame-container">
+          <div
+            class="responsive"
+            data-iframe-width="150"
+            data-iframe-height="270"
+            data-share-background-id="b56509f8-9d11-4d2f-8a04-ecb16b620ca3"
+            data-share-background-host="https://www.credly.com"
+          ></div>
+          <script
+            type="text/javascript"
+            async
+            src="//cdn.credly.com/assets/utilities/embed.js"
+          ></script>
+        </div>
+      </div>
+      <div class="divider div-transparent div-dot"></div>
+      <div class="skills">
+        <div class="skill-name">
+          <p>HTML</p>
+          <div class="background html5">
+            <div class="background-inner">
+              <img class="badge" src="images/html5.png" />
+            </div>
+          </div>
+        </div>
+        <div class="skill-name">
+          <p>CSS</p>
+          <div class="background css">
+            <div class="background-inner">
+              <img class="badge" src="images/css.webp" />
+            </div>
+          </div>
+        </div>
+        <div class="skill-name">
+          <p>Javascript</p>
+          <div class="background js">
+            <div class="background-inner">
+              <img class="badge" src="images/js.png" />
+            </div>
+          </div>
+        </div>
+        <div class="skill-name">
+          <p>React</p>
+          <div class="background react">
+            <div class="background-inner">
+              <img class="badge" src="images/react.png" />
+            </div>
+          </div>
+        </div>
+        <div class="skill-name">
+          <p>Redux</p>
+          <div class="background redux">
+            <div class="background-inner">
+              <img class="badge" src="images/redux.png" />
+            </div>
+          </div>
+        </div>
+        <div class="skill-name">
+          <p>node js</p>
+          <div class="background node">
+            <div class="background-inner">
+              <img class="badge" src="images/node.webp" />
+            </div>
+          </div>
+        </div>
+        <div class="skill-name">
+          <p>nmp</p>
+          <div class="background npm">
+            <div class="background-inner">
+              <img class="badge" src="images/npm.png" />
+            </div>
+          </div>
+        </div>
+        <div class="skill-name">
+          <p>Github</p>
+          <div class="background github">
+            <div class="background-inner">
+              <img class="badge" src="images/github.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="my-work" class="divider div-transparent div-dot"></div>
+      <div class="work-container">
+        <h2 class="work-title">Made by Adeleye</h2>
+        <h2>
+          I design and build high performing, well crafted websites, based on
+          your business goals.
+        </h2>
+        <div class="inner-work-container">
+          <div class="work">
+            <img src="" width="200px" height="200px" />
+            <p>Leatra LTD website</p>
+          </div>
+          <div class="work">
+            <img src="images/lqp.png" />
+            <p>Leatra LTD Quiz platform</p>
+          </div>
+          <div class="work">
+            <div class="work-image">
+              <img src="images/coding.webp" />
+            </div>
+            <p>The Christmas Store</p>
+          </div>
+          <div class="work">
+            <div class="work-image">
+              <img src="images/ve.png" />
+            </div>
+            <p>The Vintage Experience</p>
+          </div>
+          <div class="work">
+            <div class="work-image">
+              <img src="images/coding.webp" />
+            </div>
+            <p>The Christmas Store</p>
+          </div>
+          <div class="work">
+            <div class="work-image">
+              <img src="images/cs.png" />
+            </div>
+            <p>The Christmas Store</p>
+          </div>
+        </div>
+      </div>
+      <h2 class="contact-title">Please reach out</h2>
+      <div class="contact">
+        <div class="col-2">
+          <div class="form-container">
+            <form
+              action="email.php"
+              name="my-email-form"
+              method="post"
+              id="contact"
+            >
+              <label for="name">Name:*</label><br />
+              <input type="text" name="name" required /><br />
+              <label for="email">Email:*</label><br />
+              <input type="email" name="email" required /><br />
+              <label for="message">Please enter message here...</label>
+              <textarea
+                rows="5"
+                cols="32"
+                form="contact"
+                name="message"
+                required
+              ></textarea>
+              <div class="button-wrapper">
+                <input type="submit" value="Send Email" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-2" id="social">
+          <a
+            href="https://wa.me/+971588121250"
+            target="_blank"
+            class="fa fa-whatsapp fa-3x whatsapp"
+          ></a>
+          <a
+            href="https://twitter.com/Adescuma"
+            target="_blank"
+            class="fa fa-twitter fa-3x twitter"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/aadeleye/"
+            target="_blank"
+            class="fa fa-linkedin fa-3x linkedin"
+          ></a>
+          <a
+            href="https://github.com/a-adeleye"
+            target="_blank"
+            class="fa fa-github fa-3x github-square"
+          ></a>
+          <a
+            href="https://codepen.io/a-adeleye"
+            target="_blank"
+            class="fa fa-codepen fa-3x codepen"
+          ></a>
+        </div>
+      </div>
     </div>
+    <footer>
+      <p>Copyright &copy; Adeleye Adeyemi 2021</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="form-container">
+          <form
+            action="email.php"
+            name="my-email-form"
+            method="post"
+            id="contact"
+          >
+            <label for="name">Name:*</label><br />
+            <input type="text" name="name" required /><br />
+            <label for="email">Email:*</label><br />
+            <input type="email" name="email" required /><br />
+            <label for="message">Please enter message here...</label>
+            <textarea
+              rows="5"
+              cols="32"
+              form="contact"
+              name="message"
+              required
+            ></textarea>
+            <div class="button-wrapper">
+              <input type="submit" value="Send Email" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      const elem = document.getElementById("menu");
+      elem.style.maxHeight = "0px";
+      const toggle = () => {
+        elem.style.maxHeight === "0px"
+          ? (elem.style.maxHeight = "300px")
+          : (elem.style.maxHeight = "0px");
+      };
+
+      // Modal
+
+      const modal = document.getElementById("myModal");
+      const btn = document.getElementById("btn");
+      const span = document.getElementsByClassName("close")[0];
+
+      function modalis () {
+        modal.style.display = "block";
+      };
+
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
   </body>
 </html>

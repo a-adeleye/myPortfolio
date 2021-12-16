@@ -1,0 +1,488 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: black;
+  font-family: "Manrope", sans-serif;
+}
+
+html {
+  background: #e8e8f3;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.menu {
+  position: relative;
+  top: 0;
+  padding: 20px;
+  background: #e8e8f3;
+  border-radius: 100%;
+  cursor: pointer;
+  box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2),
+    inset 7px 7px 15px rgba(55, 84, 170, 0),
+    inset -7px -7px 20px rgba(255, 255, 255, 0),
+    0px 0px 4px rgba(255, 255, 255, 0);
+  z-index: 20;
+}
+
+.menu::before,
+.menu::after {
+  content: "";
+  background: #c3c2c7;
+  border-radius: 5px;
+  width: 30px;
+  height: 5px;
+  position: absolute;
+  left: 6px;
+  top: 18px;
+  transition: 0.2s ease;
+  z-index: 1;
+}
+
+.menu::before {
+  transform: rotate(0deg);
+}
+.menu::after {
+  transform: rotate(90deg);
+}
+
+.hero {
+  width: 95%;
+  margin: 40px auto;
+  background-color: #f3f3f3;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 350px;
+  align-items: center;
+}
+
+.col-2-left {
+  text-align: left;
+  padding: 30px;
+  flex-basis: 50%;
+  flex-grow: 2;
+  flex-shrink: 1;
+}
+
+.col-2-right {
+  flex-basis: 30%;
+  text-align: left;
+  padding: 30px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.button {
+  position: relative;
+  background-color: black;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  padding: 0.8em 1.8em;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  box-shadow: 0 0 5px #333;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 160px;
+  margin: 5px 5px;
+}
+
+.button:hover {
+  transition-duration: 0.1s;
+  background-color: #3a3a3a;
+}
+
+.button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 8px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px white;
+}
+
+.button:active:after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 8px;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.button:active {
+  top: 1px;
+}
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+}
+
+.white-box {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 250px;
+  background: #ecf0f3;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.col-2-img {
+  width: 250px;
+  height: 150px;
+  background: #f3f3f3 url(../images/coding.gif) no-repeat center center/cover;
+  border-radius: 12px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.frame-container {
+  position: relative;
+  overflow: auto;
+  padding-top: 5.5%;
+}
+.responsive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.skills {
+  display: flex;
+  margin: auto;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.skill-title {
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.divider {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 1px;
+}
+
+.div-transparent:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, #333, transparent);
+}
+
+.div-dot:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -9px;
+  left: calc(50% - 9px);
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+  border: 1px solid #333;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px #f3f3f3, 0 0 0 4px #f3f3f3;
+}
+
+.work-container {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.work-title {
+  font-size: 25px;
+}
+
+.inner-work-container {
+  width: 100%;
+  margin: 40px auto;
+  background-color: #f3f3f3;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  flex-wrap: wrap;
+  min-height: 350px;
+  align-items: center;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-evenly;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px,
+    rgba(0, 0, 0, 0.19) 0px 3px 10px 0px;
+  background: white;
+  border-radius: 6px;
+  gap: 5px;
+  margin: 10px;
+  text-align: left;
+}
+
+ul {
+  background: url(../images/blob.svg) no-repeat center center/cover;
+  display: block;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  right: 2%;
+  top: 0;
+  z-index: 10;
+  transition: max-Height 0.5s;
+  overflow: hidden
+}
+
+li {
+  position: relative;
+  top: 25%;
+  right: 30%;
+  margin: 20px;
+  display: block;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #f3f3f3;
+}
+.work img {
+  margin: 10px;
+  max-width: 200px;
+}
+
+.work p {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.contact {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.contact .col-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 0 1 50%;
+  min-width: 300px;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+.contact-title{
+  margin-top: 0 auto;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.form-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+form {
+  text-align: center;
+}
+
+form label {
+  font-weight: 700;
+  text-align: left;
+}
+input[type="text"],
+input[type="email"] {
+  width: 80%;
+  padding: 3px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 3px 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+textarea {
+  width: 80%;
+  padding: 3px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.button-wrapperr {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.col-2 a {
+  text-decoration: none;
+  margin: 5px;
+  display: block;
+}
+
+.whatsapp {
+  display: block;
+  color: #25d366;
+}
+
+.twitter {
+  display: block;
+  color: #1da1f2;
+}
+
+.linkedin {
+  color: #0077b5;
+  display: block;
+}
+
+.sticky{
+  top: 70%;
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+footer{
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p{
+  color: white;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  margin: 15% auto;
+  padding: 20px;
+  width: 60%; 
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 6079px) {
+  .skill-title {
+    flex: 0 0 100%;
+    order: 1;
+  }
+}
