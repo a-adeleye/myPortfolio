@@ -12,6 +12,15 @@
 html {
   background: #e8e8f3;
 }
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -19,7 +28,7 @@ html {
 }
 
 .header-container {
-  width: 95%;
+  max-width: 95%;
   margin: 0 auto;
 }
 
@@ -428,8 +437,10 @@ textarea {
 
 .sticky{
   top: 70%;
+  left: 80%;
   position: sticky;
   position: -webkit-sticky;
+  z-index: -2;
 }
 
 footer{
@@ -480,9 +491,19 @@ footer p{
   cursor: pointer;
 }
 
-@media only screen and (max-width: 6079px) {
+@media only screen and (max-width: 607px) {
   .skill-title {
     flex: 0 0 100%;
     order: 1;
+  }
+}
+
+@media only screen and (min-width: 1276px){
+  .main-container {
+    width: 1270px;
+  }
+
+  .hero-container{
+    justify-content: center;
   }
 }
